@@ -1,0 +1,2 @@
+URL for Wine Review Dataset Download
+https://www.kaggle.com/zynicide/wine-reviews
