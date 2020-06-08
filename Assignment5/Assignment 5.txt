@@ -1,0 +1,12 @@
+Assignment 5  - Sentiment classification
+
+Download the movie reviews dataset. It is a tar file. You need to untar and
+unzip it. Read the readme file. It describes the files in it. 
+
+1. Load the train and test dataset - both positive and negative reviews. 
+
+2. Come up with a list of text processing/filtering steps for the training data.  
+
+3. Apply a naiive bayes, SVM and a neural network classifier. 
+
+4. Analyze the results on the testing data. 
