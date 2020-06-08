@@ -1,0 +1,11 @@
+Assignment 4 Information Retrieval
+
+
+1. Starting with the example in  web_crawl.py, crawl a number of web-pages, starting with 
+a root page. From the root page extract title, link and text information. Follow each link 
+and extract title, link and text information. Save the information in a dictionary: 
+key = title, and value = text.    
+
+2. Answer the following questions:
+
+10.8, 10.10, 10.12

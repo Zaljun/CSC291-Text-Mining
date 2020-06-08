@@ -1,0 +1,37 @@
+IR: Assignment 1
+
+========================================================================
+===== Turn in: A. A short explanation of what you did, what results you
+got, any problems you encountered and answers to specific questions
+below.
+
+		 B. Code and sample output.
+		 ===============================================================
+		 ==============
+
+1. a) Read the text in alice.txt. Implement the NLP processing steps we
+did in class to extract a 'good' set of tokens. Apply the basic
+processing steps are: - Tokenize the text into sentences and then words.
+- Extract POS tags for each token. - Convert all tokens to lower case. -
+Stem the terms - eliminate all stop words.
+
+   b) Implement a few filtering rules to eliminate any remaining not
+   useful tokens (those containing punctuation marks and others
+   depending on your data set).
+
+   c) Find the frequency of each token. Order tokens by their
+   frequencies. List the 5 most frequent tokens and 5 least frequent
+   tokens.
+
+   d) Describe any problems/incorrect terms did you find with this type
+   of processing.
+
+	To read the file line by line use the example in read_alice_file.py
+
+
+2. Install the spell checker pyenchant and check it for a number of
+mispelled words and a short text with misspelled words (one sentence).
+Does it work correctly? In which cases it did not work correctly?
+
+3. Think about a retrieval and text analysis application and a data set
+that you would like to use. Describe it in a few sentences.

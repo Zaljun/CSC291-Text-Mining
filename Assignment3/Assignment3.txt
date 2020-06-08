@@ -1,0 +1,24 @@
+Assignment 3 - IR Language Models
+
+For the set of documents you used in Assignment 2, implement the language model
+with:
+ a) Jeliner Mercer (JM) linear interpolation smoothing - pick three
+different values of lambda. 
+b) Dirichlet prior smoothing  - pick three
+difference values for mu
+
+Implement the algorithm described in the slides (last two slides). Same nlp
+processing as in Assignment 2.
+
+Rank the documents for the same queries in Assignment 2 and compute the precision for 
+each smoothing method and parameter value. Precision is # of relevant doc from the first
+5 docs/5. 
+
+Compare the results between the two smoothing methods and the tf-idf results from 
+Assignment 2. 
+
+Turn in (hard-copy and blackboard - no zip files, just individual files)
+
+ 1. Code, queries,  sample ranked results. 
+ 2. Precision results for each of the queries and parameter values. 
+ 3. Comment on the results you got and comparison between different LM and td-idf methods. 

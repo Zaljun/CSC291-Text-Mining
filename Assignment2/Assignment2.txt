@@ -1,0 +1,82 @@
+Assignment 2 - IR
+
+
+1. Look at the list of text collections in NLTK:
+https://www.nltk.org/book/ch02.html
+
+
+For example the Reuters database contains 10,788 short market news
+stories in 90 categories.
+
+	from nltk.corpus import reuters
+
+	fid = reuters.fileids()  # returns a list of training/test file ids
+	categories = reuters.categories()   # returns a list of all
+	categories categories_fid = reuters.categories(fid[10])  # returns
+	the categories of a text reuters.raw(fid[10])    # raw text
+	reuters.words(fid[10])  # parsed into words
+
+There are about 100 inaugural address documents.
+
+	from nltk.corpus import inaugural inaugural.fileids()
+
+Or use the following commands to access nine large texts in nltk.  You
+	 should see a list of 9 books from Moby Dick to Wall Street Journal.
+
+	 from nltk.book import *
+
+	 texts() or sents() commands  shows you the title of the imported
+	 texts
+
+	 Let's say you want to use text1 = Moby Dick
+
+	 text1 = is a list of words from the Moby Dick book text1[0:100]  #
+	 you will see the first 100 words in the book.
+
+2. Select about 100-200 short texts (a paragraph long) on 5-10 topics
+with something in common.
+
+	a) Build an inverted index and a list of document frequencies for
+	all terms and documents.
+
+
+		Input: list of documents 
+		Processing: NLP processing, frequency of each term in each document, 
+				    # of documents each term appear in (document
+				    # frequency)
+		Output: - document frequency of all terms: dictionary of
+				('term', document_frequency) pairs 
+				- inverted index = dictionary of ('term': {(doc_id: term freq),...} 
+					= dictionary of (doc_id: term frequency) pairs
+
+	b) Rank the documents for at least 3 queries using two different
+	similarity functions (one of them should be BM25).
+
+		Input: list of documents, inverted index, document frequency,
+		query 
+		Processing:
+		- query: NLP processing and term frequency 
+		- compute the similarity between the query and each document as a dot product. 
+		- sort documents based on similarity with the query
+
+		Output: ranked list of documents and similarity values
+
+    c) For each method and each query compute the precision:
+
+        # relevant texts / first 5 ranked retrieved by algorithm 
+        
+    d) Compare and discuss the precision results obtained by the two
+    similarity functions you chose.
+
+
+2. Exercises 6.2, 6.3, 6.4, 6.7, 6.8, 6.15, 6.18, 6.20 from the textbook.
+
+Turn in (hard-copy and blackboard - no zip files, just individual files)
+
+1. Written description of the data you used (number of texts, max, min, average length in 
+words, size of the vocabulary before and after nlp processing); Describe the two tf-idf 
+methods you used; List the queries you tested your data with; Give sample of ranked 
+results; List the precision results for each of the queries. Comment on the results you 
+got. 
+
+2. Written answers to the textbook questions. 
